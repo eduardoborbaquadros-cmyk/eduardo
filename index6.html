@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Concessionária Honda</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* CABEÇALHO */
+
+        header {
+            background: linear-gradient(135deg, #ff512f, #dd2476);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        /* MENU */
+
+        nav {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff512f;
+        }
+
+        /* SEÇÕES */
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #dd2476;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        /* INÍCIO */
+
+        .inicio {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .inicio img {
+            width: 45%;
+            border-radius: 15px;
+        }
+
+        .inicio-texto {
+            width: 55%;
+        }
+
+        .inicio-texto h2 {
+            text-align: left;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #dd2476;
+            margin-bottom: 10px;
+        }
+
+        /* ATIVIDADES */
+
+        .atividade {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 6px solid #ff512f;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .atividade h3 {
+            color: #dd2476;
+            margin-bottom: 10px;
+        }
+
+        /* ÁREA DO PROJETO */
+
+        .projeto {
+            background: linear-gradient(135deg, #222, #444);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .projeto h2 {
+            color: white;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #ff512f;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            background-color: #dd2476;
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            .inicio {
+                flex-direction: column;
+            }
+
+            .inicio img,
+            .inicio-texto {
+                width: 100%;
+            }
+
+            .inicio-texto h2 {
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <h1>Concessionária Honda</h1>
+
+        <p>venda de motos novas </p>
+
+        <p>
+            melhor loja da região
+        </p>
+
+    </header>
+
+
+    <!-- MENU -->
+
+    <nav>
+
+        <a href="#inicio">Início</a>
+
+        <a href="#tecnologias">Tecnologias</a>
+
+        <a href="#conteudos">Conteúdos</a>
+
+        <a href="#atividades">Atividades</a>
+
+        <a href="#projeto">Projeto</a>
+
+    </nav>
+
+
+    <!-- INÍCIO -->
+
+    <section id="inicio">
+
+        <div class="inicio">
+
+            <img
+                src="images.png"
+                alt="Programador trabalhando em um computador"
+            >
+
+            <div class="inicio-texto">
+
+                <h2>🚀 Bem-vindos a loja honda!</h2>
+
+                <p>
+                    Este espaço foi criado para a loja
+                    <strong>HONDA</strong> melhor loja de clevelandia.
+                </p>
+
+                <br>
+
+                <p>
+                    nosso atendimento e online e presencial.
+                
+                </p>
+
+                <br>
+
+                <p>
+                    👨‍💻 motos + 🎨 novas + ⚡ usadas
+                </p>
+
+                <br>
+
+                <p>
+                    compre motos novas e seme novas.                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECNOLOGIAS -->
+
+    <section id="tecnologias">
+
+        <h2>🛠️ promoção</h2>
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <img
+                    src="images (2).jpeg"
+                    alt="Código HTML"
+                >
+
+                <h3>🌐 cg 160</h3>
+
+                <p>
+                   cg 160 por apenas 24.900
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="honda-cb-twister-2019.webp"
+                    alt="CSS e design"
+                >
+
+                <h3>🎨tw 250</h3>
+
+                <p>
+                    tw250 por apenas 54mil
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="images (1).jpeg"
+                    alt="JavaScript"
+                >
+
+                <h3>⚡africa twin</h3>
+
+                <p>
+                   por apenas 85.500
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="images.jpeg"
+                    alt="Design de interface"
+                >
+
+                <h3>🖥️ nc 750</h3>
+
+                <p>
+                    por apena 45mil
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ATIVIDADES -->
+
+    <section id="atividades">
+
+        <h2>📝 teste drive</h2>
+
+
+        <div class="atividade">
+
+            <h3>💻 temos uma pista propria para o tesste da moto</h3>
+
+            <p>
+                
+            </p>
+
+        </div>
+
+
+        <div class="atividade">
+
+            <h3>🎨 teste na rua s o clinte preferir  </h3>
+
+            <p>
+                
+            </p>
+
+        </div>
+
+
+        <div class="atividade">
+
+            <h3>📱 na estrada de terra apenas motos especificas </h3>
+
+            <p>
+                
+            </p>
+
+        </div>
+
+
+
+
+        
+
+    </section>
+
+
+    <!-- PROJETO FINAL -->
+
+    <section id="projeto">
+
+        <div class="projeto">
+
+            <h2>🚀 final do site a honda</h2>
+
+            <p>
+                
+            </p>
+
+            <br>
+
+            <p>
+                contem motos e preços 
+            </p>
+
+            <br>
+
+            <p>
+                ✅ moto
+                <br>
+                ✅ contatos
+                <br>
+                ✅ teste
+                <br>
+                ✅ modelos
+               
+            </p>
+
+            <a href="#inicio" class="botao">
+                Voltar ao início
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            💻 Front-End – 2º Ano do Ensino Médio
+        </p>
+
+        <p>
+            Aprender a programar é transformar ideias em projetos.
+        </p>
+
+        <br>
+
+        <p>
+            © 2026 - Projeto Educacional
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
